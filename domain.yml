@@ -1,0 +1,69 @@
+intents:
+  - greet 
+  - goodbye
+  - affirm
+  - deny
+  - thanks
+  - content_check
+  - inform
+  - General_info
+  - movie_suggestion
+
+
+slots:
+  movie:
+    type: text
+  genre:
+    type: text
+  year:
+    type: text
+  imdb:
+    type: text
+  themecolor:
+    type: text
+
+entities:
+  - movie
+  - genre
+  - year
+  - imdb
+  - themecolor
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_sure
+  - utter_ok
+  - utter_np
+  - utter_what_movie
+  - utter_what_genre
+  - utter_what_year
+  - utter_what_imdb
+  - utter_default
+  - action_check_movie_content
+  - action_best_choices_of_movie
+  - action_info
+  
+
+templates:
+  utter_greet:
+    - text: "Hello!"
+    - text: "Hey!!"
+  utter_goodbye:
+    - text: "Bye!"
+  utter_sure:
+    - text: "Are you sure?"
+  utter_ok:
+    - text: "OK"
+  utter_np:
+    - text: "No Problem"
+  utter_what_movie:
+    - text: "What is the name of the movie?"
+  utter_what_genre:
+    - text: "which genre do you like?"
+  utter_what_year:
+    - text: "What is the year the movie is produced after"
+  utter_what_imdb:
+    - text: "please enter the minimum acceptable IMDB score"
+  utter_default:
+    - text: "Sorry, I did not get that"
